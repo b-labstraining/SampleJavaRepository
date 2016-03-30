@@ -1,0 +1,15 @@
+<Project DefaultTargets="Compile"
+    xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    ...
+<PropertyGroup>
+    <appname>HelloWorldCS</appname>
+</PropertyGroup>
+
+<ItemGroup>
+    <CSFile Include="consolehwcs1.cs"/>
+</ItemGroup>
+
+<!-- <ItemGroup>
+    <VBFile Include="consolehwvb1.vb"/>
+</ItemGroup> -->
+</Project>
