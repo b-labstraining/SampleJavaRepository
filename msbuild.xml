@@ -1,0 +1,18 @@
+<Project
+    xmlns="http://schemas.microsoft.com/developer/msbuild/2003"
+    ToolsVersion="4.0"
+    DefaultTargets="Build">
+
+    <PropertyGroup>
+        <OutputDir>c:\TESTMSBUILDOUTPUT</OutputDir>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectToBuild Include="MySecretApplication.sln">
+            <Properties>OutputPath=$(OutputDir);Configuration=Release</Properties>
+        </ProjectToBuild>
+    </ItemGroup>
+
+    <Target Name="Build">
+        <MSBuild Projects="@(ProjectToBuild)"/>
+    </Target>
